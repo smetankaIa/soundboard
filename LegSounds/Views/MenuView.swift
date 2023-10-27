@@ -27,7 +27,7 @@ struct MenuView: View {
                         Spacer()
                     }.padding()
                     HStack{
-                        NavigationLink("List Sounds", destination: CategoryView())
+                        NavigationLink("List Sounds", destination: CategoryView(authorMan: categoryListManager()))
                             .foregroundColor(.black)
                             .padding(1)
                             .frame(width: 150)

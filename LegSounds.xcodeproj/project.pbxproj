@@ -20,10 +20,12 @@
 		71BE8D702AE8454200D28ADC /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE8D6F2AE8454200D28ADC /* SoundsView.swift */; };
 		71BE8D722AE84BCB00D28ADC /* PlayerSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE8D712AE84BCB00D28ADC /* PlayerSounds.swift */; };
 		71BE8D742AE84C0500D28ADC /* soundsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE8D732AE84C0500D28ADC /* soundsList.swift */; };
-		71BE8D782AE84D3C00D28ADC /* brownwater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71BE8D772AE84D3C00D28ADC /* brownwater.mp3 */; };
-		71BE8D7A2AE84D4100D28ADC /* ponimay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71BE8D792AE84D4100D28ADC /* ponimay.mp3 */; };
 		71BE8D7C2AE84D4400D28ADC /* zahar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71BE8D7B2AE84D4400D28ADC /* zahar.mp3 */; };
-		71BE8D7E2AE84D4800D28ADC /* razeb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71BE8D7D2AE84D4800D28ADC /* razeb.mp3 */; };
+		71DA767C2AEBD9D900217AA6 /* categoryListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA767B2AEBD9D900217AA6 /* categoryListManager.swift */; };
+		71DA767E2AEBD9F300217AA6 /* modelAuthor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DA767D2AEBD9F300217AA6 /* modelAuthor.swift */; };
+		71F7B3EC2AEBF67F009AC94E /* razeb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B3EB2AEBF67F009AC94E /* razeb.mp3 */; };
+		71F7B3EE2AEBF69A009AC94E /* ponimay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B3ED2AEBF69A009AC94E /* ponimay.mp3 */; };
+		71F7B3F02AEBF6AF009AC94E /* brownwater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 71F7B3EF2AEBF6AF009AC94E /* brownwater.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +62,12 @@
 		71BE8D6F2AE8454200D28ADC /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
 		71BE8D712AE84BCB00D28ADC /* PlayerSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSounds.swift; sourceTree = "<group>"; };
 		71BE8D732AE84C0500D28ADC /* soundsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundsList.swift; sourceTree = "<group>"; };
-		71BE8D772AE84D3C00D28ADC /* brownwater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = brownwater.mp3; path = ../../../soundboard/soundboard/view/sounds/brownwater.mp3; sourceTree = "<group>"; };
-		71BE8D792AE84D4100D28ADC /* ponimay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ponimay.mp3; path = ../../../../../Downloads/ponimay.mp3; sourceTree = "<group>"; };
 		71BE8D7B2AE84D4400D28ADC /* zahar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = zahar.mp3; path = ../../../../../Desktop/soudsForSoundBoard/zahar.mp3; sourceTree = "<group>"; };
-		71BE8D7D2AE84D4800D28ADC /* razeb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = razeb.mp3; path = ../../../../../Downloads/razeb.mp3; sourceTree = "<group>"; };
+		71DA767B2AEBD9D900217AA6 /* categoryListManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = categoryListManager.swift; path = ../../../../../.Trash/categoryListManager.swift; sourceTree = "<group>"; };
+		71DA767D2AEBD9F300217AA6 /* modelAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelAuthor.swift; sourceTree = "<group>"; };
+		71F7B3EB2AEBF67F009AC94E /* razeb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = razeb.mp3; path = ../../../../../Desktop/soudsForSoundBoard/razeb.mp3; sourceTree = "<group>"; };
+		71F7B3ED2AEBF69A009AC94E /* ponimay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ponimay.mp3; path = ../../../../../Desktop/soudsForSoundBoard/ponimay.mp3; sourceTree = "<group>"; };
+		71F7B3EF2AEBF6AF009AC94E /* brownwater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = brownwater.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				71BE8D692AE841CB00D28ADC /* ModelSounds.swift */,
+				71DA767D2AEBD9F300217AA6 /* modelAuthor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 		71BE8D682AE8419E00D28ADC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				71DA767B2AEBD9D900217AA6 /* categoryListManager.swift */,
 				71BE8D6B2AE8427000D28ADC /* soundListManager.swift */,
 				71BE8D712AE84BCB00D28ADC /* PlayerSounds.swift */,
 				71BE8D732AE84C0500D28ADC /* soundsList.swift */,
@@ -181,10 +187,10 @@
 		71BE8D762AE84D0C00D28ADC /* SoundsSprite */ = {
 			isa = PBXGroup;
 			children = (
-				71BE8D772AE84D3C00D28ADC /* brownwater.mp3 */,
-				71BE8D792AE84D4100D28ADC /* ponimay.mp3 */,
+				71F7B3EF2AEBF6AF009AC94E /* brownwater.mp3 */,
+				71F7B3ED2AEBF69A009AC94E /* ponimay.mp3 */,
+				71F7B3EB2AEBF67F009AC94E /* razeb.mp3 */,
 				71BE8D7B2AE84D4400D28ADC /* zahar.mp3 */,
-				71BE8D7D2AE84D4800D28ADC /* razeb.mp3 */,
 			);
 			path = SoundsSprite;
 			sourceTree = "<group>";
@@ -293,12 +299,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BE8D782AE84D3C00D28ADC /* brownwater.mp3 in Resources */,
-				71BE8D7E2AE84D4800D28ADC /* razeb.mp3 in Resources */,
-				71BE8D7A2AE84D4100D28ADC /* ponimay.mp3 in Resources */,
+				71F7B3EC2AEBF67F009AC94E /* razeb.mp3 in Resources */,
+				71F7B3EE2AEBF69A009AC94E /* ponimay.mp3 in Resources */,
 				71BE8D432AE8409F00D28ADC /* Preview Assets.xcassets in Resources */,
 				71BE8D402AE8409F00D28ADC /* Assets.xcassets in Resources */,
 				71BE8D7C2AE84D4400D28ADC /* zahar.mp3 in Resources */,
+				71F7B3F02AEBF6AF009AC94E /* brownwater.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,9 +331,11 @@
 			files = (
 				71BE8D722AE84BCB00D28ADC /* PlayerSounds.swift in Sources */,
 				71BE8D3E2AE8409E00D28ADC /* MenuView.swift in Sources */,
+				71DA767E2AEBD9F300217AA6 /* modelAuthor.swift in Sources */,
 				71BE8D6C2AE8427000D28ADC /* soundListManager.swift in Sources */,
 				71BE8D742AE84C0500D28ADC /* soundsList.swift in Sources */,
 				71BE8D3C2AE8409E00D28ADC /* LegSoundsApp.swift in Sources */,
+				71DA767C2AEBD9D900217AA6 /* categoryListManager.swift in Sources */,
 				71BE8D6A2AE841CB00D28ADC /* ModelSounds.swift in Sources */,
 				71BE8D702AE8454200D28ADC /* SoundsView.swift in Sources */,
 				71BE8D6E2AE8441D00D28ADC /* CategoryView.swift in Sources */,
