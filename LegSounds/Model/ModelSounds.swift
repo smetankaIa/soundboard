@@ -9,5 +9,5 @@ import Foundation
 struct sounds: Hashable{
     var namesound: String
     var soundfile: String
-    var author: String
+    var author: authorList
 }

@@ -7,5 +7,6 @@
 
 import Foundation
 struct modelAuthor: Hashable{
-    var categoryname: String
+    let categoryname: [String] = ["All Sounds", "Vadim", "Zahar", "Yasha", "Matyew", "Roma", "Vlad", "Sosnov", "Alex"]
 }
+

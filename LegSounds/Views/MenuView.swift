@@ -14,7 +14,13 @@ struct MenuView: View {
         NavigationView{
             ZStack{
                 VStack{
-                    Button(action: {PlayerSounds.instance.playSound(list: soundOption(rawValue: "\(randomsound.soundlist)") ?? .razeb)}){
+                    Button(action: {
+                        let randomSound: soundOption? = soundOption.allCases.randomElement()
+                        
+                        guard let randomSound else { return }
+                        
+                        PlayerSounds.instance.playSound(list: randomSound)
+                    }){
                         HStack{
                             Image(systemName: "speaker.wave.2.fill")
                             Text("RandomSound")
@@ -27,7 +33,7 @@ struct MenuView: View {
                         Spacer()
                     }.padding()
                     HStack{
-                        NavigationLink("List Sounds", destination: CategoryView(authorMan: categoryListManager()))
+                        NavigationLink("List Sounds", destination: CategoryView())
                             .foregroundColor(.black)
                             .padding(1)
                             .frame(width: 150)

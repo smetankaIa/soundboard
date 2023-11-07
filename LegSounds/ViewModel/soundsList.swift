@@ -6,7 +6,7 @@
 //
 
 import Foundation
-enum soundOption: String{
+enum soundOption: String, CaseIterable {
     case brownwater
     case razeb
     case zahar

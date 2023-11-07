@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct CategoryView: View {
-    @ObservedObject var authorMan: categoryListManager
+    let categoryname: [String] = ["All Sounds", "Vadim", "Zahar", "Yasha", "Matyew", "Roma", "Vlad", "Sosnov", "Alex"]
+    
+    
     var body: some View {
         ZStack{
             Form{
-                ForEach(authorMan.categrylist, id: \.self){ aut in
+                ForEach(categoryname, id: \.self){ category in
                     VStack{
-                        NavigationLink(destination: SoundsView(soundMan: soundListManager())) {
-                            Text("\(aut.categoryname)")
+                        NavigationLink(destination: SoundsView(soundMan: soundListManager(), category: category)) {
+                            Text("\(category)")
 
                         }
                     }
@@ -27,5 +29,7 @@ struct CategoryView: View {
 }
 
 #Preview {
-    CategoryView(authorMan: categoryListManager())
+    NavigationView {
+        CategoryView()
+    }
 }

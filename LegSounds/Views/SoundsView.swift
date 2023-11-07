@@ -11,6 +11,9 @@ struct SoundsView: View {
     @State var names = ""
     @ObservedObject var soundMan: soundListManager
     var columns = [GridItem()]
+    
+    let category: String
+    
     var body: some View {
         ZStack{
             VStack{
@@ -20,7 +23,7 @@ struct SoundsView: View {
                 }
                 ScrollView(.vertical){
                     LazyVGrid(columns: columns, alignment: .center){
-                        ForEach(soundMan.soundlist, id: \.self){
+                        ForEach(soundMan.filterSoundList(list: soundMan.soundlist, category: category), id: \.self){
                             sou in VStack{
                                 Button(action: {PlayerSounds.instance.playSound(list: soundOption(rawValue: "\(sou.soundfile)") ?? .razeb)}){
                                     HStack{
@@ -40,5 +43,5 @@ struct SoundsView: View {
 }
 
 #Preview {
-    SoundsView(soundMan: soundListManager())
+    SoundsView(soundMan: soundListManager(), category: "All sounds")
 }
